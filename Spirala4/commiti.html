@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Commiti</title>
+    <link rel="stylesheet" type="text/css" href="commiti.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="taz.png" alt="P" />
+        <p id="naziv"><b>Pregled commita</b></p>
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenta</a></li>
+            <li><a href="zadaci.html">Odabir vjezbe</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li>
+        </ul>
+    </div>
+    <div id="tabela">
+        <p><b>Student</b>: Neko Nekic 12345</p>
+        <p><b>Naziv vjezbe/spirale</b>: Vjezba1</p>
+        <p><b>Repozitorij</b>: <a href="https://bitbucket.org">Hyperlink</a></p>
+
+        <br>
+        <form id="mojaMalaForma" action="#">
+                <label id="mojaMalaLabela">Velicina tabele: </label><input type="number" id="kreiranjeTabele">
+                <button id="kreiranje" onclick="kreiraj(); return false" type="submit">Kreiraj tabelu</button>
+                <br>
+                <label>Broj reda: </label><input type="number" id="commit1">
+                <label>Link commita: </label><input type="text" id="link1">
+                <button id="dodavanje" onclick="dodaj()" type="button">Dodaj commit</button>
+                <br>
+                <label>Broj reda: </label><input type="number" id="red1">
+                <label>Broj commita: </label><input type="number" id="commit2">
+                <label>Link commita: </label><input type="text" id="link2">
+                <button id="editovanje" onclick="edituj()" type="button">Edituj commit</button>
+                <br>
+                <label>Broj reda: </label><input type="number" id="red2">
+                <label>Broj commita: </label><input type="number" id="commit3">
+                <button id="brisanje" onclick="obrisi()" type="button">Obrisi commit</button>
+        </form>
+        
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script type="text/javascript" src="commiti.js"></script>
+    <script type="text/javascript" src="committabela.js"></script>
+    <script type="text/javascript" src="validacija.js"></script>
+</body>

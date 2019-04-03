@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Zadaci</title>
+    <link rel="stylesheet" type="text/css" href="zadaci.css">
+</head>
+<body>
+    <div id="header">
+            <img id="logo" src="taz.png" alt="P" />
+            <p id="naziv"><b>Odabir vjezbe</b></p>
+            <ul id="meni">
+                <li><a href="studenti.html">Pregled studenta</a></li>
+                <li><a href="zadaci.html">Odabir vjezbe</a></li>
+                <li><a href="commiti.html">Pregled commita</a></li>
+                <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+                <li><a href="addStudent.html">Dodavanje studenta</a></li>
+                <li><a href="addGodina.html">Dodavanje godine</a></li>
+            </ul>
+        </div>
+    <div id="godina">
+        <p><b>Godina</b></p>
+        <ul>
+            <li><a href="#">Godina 2014/15</a></li>
+            <li><a href="#">Godina 2015/16</a></li>
+            <li><a href="#">Godina 2016/17</a></li>
+            <li><a href="#">Godina 2017/18</a></li>
+            <li><a href="#">Godina 2018/19</a></li>
+        </ul>
+    </div>
+    <div id="student">
+        <p><b>Student</b></p>
+        <form action="#">
+            <input name="query" type="text">
+            <br>
+            <button name="search" type="submit" onclick="validiraj(); return false">Search</button> 
+        </form>
+        <ul>
+            <li>Ime i prezime | Index</li>
+            <li><a href="#">Neko Nekic | 12345</a></li>
+            <li><a href="#">Neko Nekic | 12345</a></li>
+            <li><a href="#">Neko Nekic | 12345</a></li>
+            <li><a href="#">Neko Nekic | 12345</a></li>
+        </ul>
+    </div>
+    <div class="polovina">
+            <div id="vjezbe" class="folder">
+                <p><b>Vjezbe</b></p>
+                <ul>
+                    <li><a href="#" class="item">Vjezba 1</a></li>
+                    <li><a href="#" class="item">Vjezba 2</a></li>
+                    <li><a href="#" class="item">Vjezba 3</a></li>
+                    <li><a href="#" class="item">Vjezba 4</a></li>
+                    <li><a href="#" class="item">Vjezba 5</a></li>
+                    <li><a href="#" class="item">Vjezba 6</a></li>
+                </ul>
+            </div>
+            <div id="spirale" class="folder">
+                <p><b>Spirale</b></p>
+                <ul>
+                    <li><a href="#" class="item">Vjezba 1</a></li>
+                    <li><a href="#" class="item">Vjezba 2</a></li>
+                    <li><a href="#" class="item">Vjezba 3</a></li>
+                    <li><a href="#" class="item">Vjezba 4</a></li>
+                    <li><a href="#" class="item">Vjezba 5</a></li>
+                </ul>
+            </div>
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script type="text/javascript" src="zadaci.js"></script>
+</body>

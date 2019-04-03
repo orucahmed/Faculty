@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dodaj zadatak</title>
+    <link rel="stylesheet" type="text/css" href="addZadatak.css">
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="taz.png" alt="P" />
+        <p id="naziv"><b>Dodaj zadatak</b></p>
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenta</a></li>
+            <li><a href="zadaci.html">Odabir vjezbe</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li>
+        </ul>
+    </div>
+    <div id="glavniSadrzaj">
+        <p><b>Novi zadatak</b></p>
+        <form action="/addZadatak" method="POST" onsubmit="return validiraj()" enctype="multipart/form-data">
+            <label>Naziv zadataka</label>
+            <br>
+            <input name="naziv" type="text">
+            <br>
+            <label>Tekst postavke</label>
+            <br>
+            <input type="file" name="postavka" id="inputfile" required>
+            <button id="dodaj" type="submit">Dodaj</button>
+        </form>
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script type="text/javascript" src="addZadatak.js"></script>
+</body>

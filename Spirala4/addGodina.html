@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dodavanje godine</title>
+    <link rel="stylesheet" type="text/css" href="addGodina.css">
+</head>
+<body onload="load()">
+    <div id="header">
+        <img id="logo" src="taz.png" alt="P" />
+        <p id="naziv"><b>Dodavanje godine</b></p>
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenta</a></li>
+            <li><a href="zadaci.html">Odabir vjezbe</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li>
+        </ul>
+    </div>
+    
+    <div id="side">
+        <p><b>Unos godine</b></p>
+        <form name="fPojedinacni" onsubmit="return validiraj()" action="/addGodina"  method="POST" >
+            <label>Naziv godine</label>
+            <br>
+            <input type="text" name="nazivGod" />
+            <br>
+            <label>Naziv repozitorija vjezbe</label>
+            <br>
+            <input type="text" name="nazivRepVje" />
+            <br>
+            <label>Naziv repozitorija spirale</label>
+            <br>
+            <input type="text" name="nazivRepSpi" />
+            <br>
+            <button type="submit" name="submit">Ponisti</button>
+            <button type="submit" name="submit">Dodaj</button>
+        </form>
+    </div>
+    <div id="glavniSadrzaj">
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script type="text/javascript" src="addGodina.js"></script>
+    <script type="text/javascript" src="godineAjax.js"></script>
+</body>

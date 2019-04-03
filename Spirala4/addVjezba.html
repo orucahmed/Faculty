@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Dodavanje vjezbe/spirale</title>
+    <link rel="stylesheet" type="text/css" href="addVjezba.css">
+</head>
+<body onload="load()">
+    <div id="header">
+        <img id="logo" src="taz.png" alt="P" />
+        <p id="naziv"><b>Dodavanje vjezbe/spirale</b></p>
+        <ul id="meni">
+            <li><a href="studenti.html">Pregled studenta</a></li>
+            <li><a href="zadaci.html">Odabir vjezbe</a></li>
+            <li><a href="commiti.html">Pregled commita</a></li>
+            <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+            <li><a href="addVjezba.html">Dodavanje vjezbe/spirale</a></li>
+            <li><a href="addStudent.html">Dodavanje studenta</a></li>
+            <li><a href="addGodina.html">Dodavanje godine</a></li>
+        </ul>
+    </div>
+    
+    <div id="glavniSadrzaj">
+        <p><b>Dodavanje postojece vjezbe/spirale</b></p>
+        <form name="fPostojeca" action="/addVjezba" method="POST">
+            
+            <label>Godina</label>
+            <br>
+            <select name="sGodine" id="id0">
+                
+            </select>
+            <br>
+            <label>Vjezbe/spirale</label>
+            <br>
+            <select name="sVjezbe" id="id2">
+                
+            </select>
+            <button type="submit" name="submit">Dodaj</button>
+        </form>
+        <p><b>Nova vjezba/spirala</b></p>
+        <form name="fNova" onsubmit="return validiraj()" action="/addVjezba" method="POST">
+            <label>Naziv vjezbe</label>
+            <br>
+            <input name="naziv" type="text">
+            <br>
+            <label>Godina</label>
+            <br>
+            <select name="sGodine" id="id1">
+            </select>
+            <br>
+            <input type="checkbox" name="spirala">
+            <label>Spirala</label>
+            <button type="submit" name="submit">Dodaj</button>
+        </form>
+        <p><b>Nesto</b></p>
+        <form name="fPoveziZadatak" id="id18" method="POST" onsubmit="posaljiZahtjev();">
+            <p>Dodavanje zadatka na vjezbu</p>
+            <label>Vjezba</label>
+            <br>
+            <select name="sVjezbe" id="id3" onchange="loadZadaci();">
+            </select>
+            <br>
+            <label>Zadatak</label><br>
+            <select name="sZadatak" id="id4">
+            </select>
+            <br>
+            <button type="submit" name="dZadatak">Dodaj zadatak</button>
+        </form>
+    </div>
+    <div id="footer">
+        <p>Web tehnologije 2018/19</p>
+    </div>
+    <script type="text/javascript" src="validacija.js"></script>
+    <script type="text/javascript" src="addVjezba.js"></script>
+    <script type="text/javascript" src="GodinaAjaxSelect.js"></script>
+</body>
